@@ -9,3 +9,4 @@ total = number1 + number5
 
 print(total)
 print(type(total))
+print("Everything going good")(number2)
