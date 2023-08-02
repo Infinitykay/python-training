@@ -18,3 +18,17 @@ total = a ** c # exponents
 total = (a + b) ** c
 
 print(total)
+x = 20
+y = 31
+z = 2
+# floor division
+print(y // z)
+
+# the modulo operattor
+
+a = 1
+b = 2
+c = 3
+d = 8
+
+print(d % c)
