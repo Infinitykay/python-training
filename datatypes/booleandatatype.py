@@ -13,7 +13,7 @@ dig1 = 1
 dig0 = 0
 
 # boolean conversion is True if target var is not empty and vice versa
-print(bool(statement))
+# print(bool(statement))
 # print(bool(empty))
 # print(bool(dig1))
 # print(bool(dig0))
