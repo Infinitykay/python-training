@@ -80,3 +80,4 @@ groceries[True] = ["Available"]
 print(groceries.get('drink', 'Not available'))
 
 print(len(groceries))
+

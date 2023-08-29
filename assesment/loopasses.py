@@ -241,3 +241,50 @@ for i in numbers:
 
 average = total / len(numbers)
 print(f'The mean average of {numbers}  is {average}')
+
+for i in range(1, 20):
+  num = 0
+  num += i
+  value = str(num) * i
+  print(value)
+
+numbers = [52, 85, 10, 23, 12.32, 20, 0]
+
+# for w in numbers:
+#   print(w)
+# print(numbers)
+
+# Exercise 5:
+# Print the first 10 terms of the Fibonacci sequence using a for loop.
+
+# Exercise 8:
+# Print a pattern of stars in a right triangle shape using a nested for loop:
+star = "."
+
+for i in range(1, 20):
+  value = star * i
+  print(value)
+
+# markdown
+# Copy code
+# *
+# **
+# ***
+# ****
+# *****
+
+# Exercise 9:
+# Print a pattern of numbers in a pyramid shape using a nested for loop:
+
+for i in range(1, 20):
+  num = 0
+  num += i
+  value = str(num) * i
+  print(value)
+# Copy code
+#    1
+#   222
+#  33333
+# 4444444
+# Exercise 10:
+# Print the factorial of a number using a for loop.
