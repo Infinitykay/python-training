@@ -18,38 +18,39 @@ current_time = today.time()
 
 # Exercise 4: Calculate Age
 # Write a program that takes a birth year as input and calculates the user's age.
-# def calculate_age(birth_year):
-#     current_year = datetime.today().year
-#     age = current_year - birth_year
-#     return age
+def calculate_age(birth_year):
+    
+    current_year = datetime.today().year
+    age = current_year - birth_year
+    return age
 
-# try:
-#     birth_year = int(input("What year were you born?"))
-#     age = calculate_age(birth_year)
-#     print(f"You are {age} years old. ")
-# except:
-#     print("Please enter a valid year. (integer)")   
+try:
+    birth_year = int(input("What year were you born?"))
+    age = calculate_age(birth_year)
+    print(f"You are {age} years old. ")
+except:
+    print("Please enter a valid year. (integer)")   
 
 # Exercise 5: Calculate Time Difference
 # Write a program that calculates the time difference between two given dates and prints the result in days, hours, and minutes. 
 
-# from datetime import datetime, date, time
-# y = int(input("Enter a year-     "))
-# m = int(input("Enter a month-    "))
-# d = int(input("Enter a day-     "))
-# random_date = datetime(y, m, d)
-# print(f"Your first date is   {random_date}   ")
+from datetime import datetime, date, time
+y = int(input("Enter a year-     "))
+m = int(input("Enter a month-    "))
+d = int(input("Enter a day-     "))
+random_date = datetime(y, m, d)
+print(f"Your first date is   {random_date}   ")
 
-# y = int(input("Enter a year-     "))
-# m = int(input("Enter a month-    "))
-# d = int(input("Enter a day-     "))
-# print(f"Your second date is   {random_date}   ")
+y = int(input("Enter a year-     "))
+m = int(input("Enter a month-    "))
+d = int(input("Enter a day-     "))
+print(f"Your second date is   {random_date}   ")
 
-# random_date2 = datetime(y, m, d)
-# diff = random_date2 - random_date
+random_date2 = datetime(y, m, d)
+diff = random_date2 - random_date
 
 
-# print(f"The difference is {diff} / {hours}hrs / {minutes}mins")
+print(f"The difference is {diff} / {hours}hrs / {minutes}mins")
 
 # Write a program that calculates the date that is 100 days from the current date and prints it.
 from datetime import timedelta
@@ -68,4 +69,16 @@ dayofweek = date.isoweekday()
 days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 print(f'The day of the week for {date} is {days[dayofweek]}')
 
+# Write a program that checks whether a given year is a leap year or not.
+year = int(input("Enter a year          "))
+if year % 4 == 0 and year % 100 != 0 or (year % 400) == 0:
+  print(f'{year} is a leap year.')
+else: 
+  print(f'{year} is not a leap year. ')
+import calendar
+year = int(input("Enter a year          "))
+if calendar.isleap(year):
+  print(f'{year} is a leap year.')
+else:
+  print(f'{year} is not a leap year.')
 
