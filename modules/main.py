@@ -9,8 +9,7 @@ if platform == "win32":
 This code will change your input . 
           Enter c to capialize, 
           l to change to lowercase,
-          t to change to title or 
-          u to change to uppercase
+          t to change to title or           u to change to uppercase
 """)
     sentence = input("Enter your sentence:    ")
     operation =input("Enter an operation.    ")

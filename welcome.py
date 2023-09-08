@@ -1,1 +1,4 @@
-print(90+90)
+from decouple import config
+import requests
+
+print(config("MY_PASSWORD"))
